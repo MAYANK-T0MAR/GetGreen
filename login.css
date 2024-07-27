@@ -1,0 +1,105 @@
+html, body {
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    font-family: "Montserrat Thin", roboto, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    margin: 40px 90px 5px 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  h6 {
+    font-family: "Montserrat Thin", sans-serif;
+    font-size: 12px;
+    color: white;
+    margin: 0px 100px 30px 100px;
+  }
+  span {
+    margin-left: 1.5px;
+    color: #F7971E;
+  }
+
+  .page{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    width: 1440px;
+    height: 750px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  
+  .box-1 {
+    background-color: black;
+    display: flex;
+    flex-basis: 1400px;
+    align-items: center;
+    justify-content: center;
+  }
+  .loginBox{
+    position: relative;
+  }
+
+
+
+  .box-2 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-basis: 1980px;
+  }
+  .input-box {
+    width: 500px;
+    font-size: 19px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 26px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px dotted #ccc;
+    outline: none;
+  }
+  #submit {
+    background-color: #F7971E;
+    padding: 15px 24px 15px 24px;
+    font-size: 18px;
+    color: white;
+    border: none;
+  }
+  #submit-container {
+    text-align: left;
+    padding: 5px 80px 10px 80px;
+  }
+  .form-container {
+    height: 300px;
+    padding-left: 90px;
+    /*   padding-right: 80px; */
+    margin-top: 100px;
+  }
+  .input-container {
+    padding: 20px 80px 0px 80px;
+    margin: 0px;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(184, 184, 184, 0.445);
+  }
+  p {
+    padding: 40px 0px 0px 40px;
+  }
+  p a {
+    text-decoration: underline;
+    color: gray;
+  }
+  

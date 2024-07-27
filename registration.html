@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="Plants-store-master/css/registration.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <!--Box 1 -->
+            <div class="box-1">
+                <div class="creatAccountBox">
+                    <h1>Create your account</h1>
+                    <h6>Already registered? <a href="http://localhost/project1/login.html"><span>Sign in</span></a> </h6>
+                </div>
+            </div>
+    
+            <!--Box 2 -->
+            <div class="box-2">
+                <form action="submit.php" method="post" class="form-container" onsubmit="return validateForm()">
+                    <div class="input-container">
+                        <input class="input-box" type="text" name="firstName" id="firstName" placeholder="FIRST NAME" required>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="text" name="lastName" id="lastName" placeholder="LAST NAME" required>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="email" name="email" id="email" placeholder="EMAIL" required>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="password" name="password" id="password" placeholder="PASSWORD" maxLength="32" required>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="tel" name="number" id="number" placeholder="PHONE NUMBER" maxLength="32" required>
+                    </div>
+                    <div class="input-container">
+                        <textarea class="input-box" name="address" id="address" placeholder="ADDRESS" required></textarea>
+                    </div>                
+                    <div id="submit-container">
+                        <input id="submit" type="submit" value="Create your account" name="register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var number = document.getElementById("number").value;
+
+            if (!/^[a-zA-Z]+$/.test(firstName)) {
+                alert("Invalid input for First Name. Please enter alphabets only.");
+                return false;
+            }
+
+            if (!/^[a-zA-Z]+$/.test(lastName)) {
+                alert("Invalid input for Last Name. Please enter alphabets only.");
+                return false;
+            }
+
+
+            if (number.length < 10 || !/^[6-9]\d{9}$/.test(number)) {
+            alert("Phone Number should be at least 10 digits long and start with 6, 7, 8, or 9, and contain only numbers.");
+            return false;
+            }
+
+
+            
+            if (!/\S+@\S+\.\S+/.test(email)) {
+                alert("Invalid email address.");
+                return false;
+            }
+
+            if (password.length < 8) {
+    alert("Password should be at least 8 characters long.");
+    return false;
+}
+
+if (!/[a-zA-Z]/.test(password) || !/\d/.test(password)) {
+    alert("Password should contain both letters and numbers.");
+    return false;
+}
+
+            return true;
+        }
+    </script>
+</body>
+</html>

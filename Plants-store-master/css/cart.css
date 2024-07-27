@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* -------- Basis ---------- */
+:root {
+  --white: #fff;
+  --close: #fe0000;
+  --dark-color: #23272b;
+  --olive: #b2d3a6;
+  --green: #00ba69;
+  --darkGreen: #214f3d;
+  --orange: #b55d47;
+  --light-color: #ece7df;
+}
+    .quantity-label {
+        margin-right: 10px; /* Adjust as needed */
+      }
+      
+      .quantity-input {
+        display: flex;
+        align-items: center;
+      }
+
+.row{
+  margin-bottom: 20px;
+}
+
+.quantity-update{
+  display: flex;
+  gap: 7px;
+  font-weight: 550;
+}
+
+/* <!-- Navbar Section --> */
+#navbar {
+  background-color: var(--darkGreen);
+}
+.fa-bars {
+  color: var(--white);
+}
+.nav-link {
+  color: var(--white);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: var(--olive);
+}
+@media screen and (max-width: 768px) {
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
+  }
+  .signin-nav {
+    margin-left: 0.5rem;
+    font-weight: bold;
+  }
+}
+
+.nav-link .username {
+  margin-right: 0.2rem; /* Adjust the margin as needed */
+}
+
+/* <!-- End of Navbar Section --> */
