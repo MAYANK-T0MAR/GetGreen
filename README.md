@@ -8,7 +8,7 @@ GetGreen is a comprehensive plant store website designed to enhance the shopping
 
 - **Home Page**: Showcases featured plants and promotions.
 - **Plant Catalog**: Browse through various plants with detailed information, including images, descriptions, and care instructions.
-- **Search and Filtering**: Efficiently find plants by categories such as type, size, and care level.
+- **Search and Filtering**: Efficiently find plants by size.
 - **Product Details**: View detailed information about each plant, including price, description, and availability.
 - **Shopping Cart**: Add plants to the cart, view cart contents, and proceed to checkout.
 - **User Authentication**: Register, log in, and manage user accounts.
